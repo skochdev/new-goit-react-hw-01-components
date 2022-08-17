@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
+  background-color: ${p => p.theme.colors.white};
+  padding-top: ${p => p.theme.space[4]}px;
+  box-shadow: ${p => p.theme.shadows.sm};
   max-width: ${p => p.theme.sizes[300]};
-  margin: 0 auto;
   color: ${p => p.theme.colors.text};
   border-radius: ${p => p.theme.radii.normal};
+  margin: 0 auto;
   overflow: hidden;
 `;
 

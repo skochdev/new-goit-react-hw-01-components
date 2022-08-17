@@ -20,8 +20,8 @@ export const theme = Object.freeze({
     xs: '12px',
     s: '14px',
     m: '16px',
-    l: '32px',
-    xl: '64px',
+    l: '24px',
+    xl: '32px',
   },
   fontWeights: [400, 500, 700, 900],
   lineHeights: {
