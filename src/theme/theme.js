@@ -1,15 +1,16 @@
-export const theme = {
+export const theme = Object.freeze({
   borders: [0, '2px solid', '4px solid', '8px solid'],
   radii: {
     none: '0',
-    normal: '0.25rem',
+    normal: '0.4rem',
     round: '50%',
   },
   colors: {
     black: '#000',
     white: '#fff',
     text: '#2a2a2a',
-    background: '#fff',
+    textAlt: '#B5BDC5',
+    background: '#E7ECF2',
     primary: '#07c',
     secondary: '#05a',
     accent: '#fda031',
@@ -28,13 +29,21 @@ export const theme = {
     title: 1.25,
     copy: 1.5,
   },
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
-  shadows: {
-    boxShadow: {
-      none: 'none',
-      sm: 'box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;',
-      md: 'box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;',
-      lg: 'box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
-    },
+  space: [2, 4, 8, 16, 32, 64, 128, 256],
+  sizes: {
+    50: '50px',
+    100: '100px',
+    200: '200px',
+    300: '300px',
+    400: '400px',
+    600: '600px',
+    800: '800px',
+    1000: '1000px',
   },
-};
+  shadows: {
+    none: 'none',
+    sm: 'rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;',
+    md: 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;',
+    lg: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
+  },
+});
