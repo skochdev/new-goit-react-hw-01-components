@@ -12,8 +12,8 @@ export const ProfileCard = styled.div`
 `;
 
 export const ProfileDescription = styled.div`
-  color: ${p => p.theme.colors.textAlt};
   text-align: center;
+  color: ${p => p.theme.colors.textAlt};
   margin-top: ${p => p.theme.space[4]}px;
 
   & p {
