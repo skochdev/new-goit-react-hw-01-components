@@ -16,7 +16,7 @@ export const Statistics = ({ title = null, stats }) => {
         <StyledList>
           {stats.map(({ label, percentage, id }) => (
             <StyledListItem key={id}>
-              <Box p={4} bg="white">
+              <Box bg="white">
                 <Box as="span">{label}</Box>
                 <Box as="span" color={getRandomHexColor()}>
                   {percentage}%

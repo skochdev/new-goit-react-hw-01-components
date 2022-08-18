@@ -1,7 +1,8 @@
 import styled from 'styled-components/macro';
 
 export const StyledStatistics = styled.div`
-  display: block;
+  width: ${p => p.theme.sizes[600]};
+  margin: 0 auto;
 `;
 
 export const StyledTitle = styled.h2`
@@ -12,11 +13,10 @@ export const StyledTitle = styled.h2`
 `;
 
 export const StyledList = styled.ul`
+  display: flex;
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.l};
-  display: flex;
   border: ${p => p.theme.borders[1]};
-  min-width: 40vw;
 `;
 
 export const StyledListItem = styled.li`
@@ -25,6 +25,7 @@ export const StyledListItem = styled.li`
   flex-basis: 20%;
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.l};
+  padding: ${p => p.theme.space[2]}px;
   text-align: center;
 
   span {
