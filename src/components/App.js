@@ -3,18 +3,19 @@ import { Profile } from './Profile/Profile';
 import profileData from 'data.json';
 import { Statistics } from './Statistics/Statistics';
 import statistics from 'statistics.json';
+import { FriendList } from './FriendList/FriendList';
+import friends from '../friends';
 
 function App() {
-  const { username, tag, location, avatar, stats } = profileData;
   return (
     <Box as="main" bg="white">
       <Box as="section">
         <Profile
-          username={username}
-          tag={tag}
-          location={location}
-          avatar={avatar}
-          stats={stats}
+          username={profileData.username}
+          tag={profileData.tag}
+          location={profileData.location}
+          avatar={profileData.avatar}
+          stats={profileData.stats}
         />
       </Box>
       <Box
@@ -34,6 +35,9 @@ function App() {
         flexDirection="column"
         justifyContent="center">
         <Statistics stats={statistics} />
+      </Box>
+      <Box>
+        <FriendList friends={friends}></FriendList>
       </Box>
     </Box>
   );

@@ -1,25 +1,25 @@
 import styled from 'styled-components/macro';
 
-export const StyledStatistics = styled.div`
+export const Statistics = styled.div`
   width: ${p => p.theme.sizes[600]};
   margin: 0 auto;
 `;
 
-export const StyledTitle = styled.h2`
+export const Title = styled.h2`
   color: ${p => p.theme.colors.primary};
   font-size: ${p => p.theme.fontSizes.xl};
   text-transform: uppercase;
   text-align: center;
 `;
 
-export const StyledList = styled.ul`
+export const List = styled.ul`
   display: flex;
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.l};
   border: ${p => p.theme.borders[1]};
 `;
 
-export const StyledListItem = styled.li`
+export const ListItem = styled.li`
   display: flex;
   flex-flow: column nowrap;
   flex-basis: 20%;

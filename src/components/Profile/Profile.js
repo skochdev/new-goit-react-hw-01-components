@@ -1,38 +1,31 @@
 import { Box } from '../Box';
 import PropTypes from 'prop-types';
-import {
-  ProfileCard,
-  ProfileDescription,
-  ProfileAvatar,
-  ProfileStats,
-  ProfileName,
-  ProfileStatsItem,
-} from './Profile.styled';
+import * as S from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Box bg="background" p={5}>
-      <ProfileCard>
-        <ProfileAvatar src={avatar} alt="User avatar" />
+      <S.ProfileCard>
+        <S.ProfileAvatar src={avatar} alt="User avatar" />
 
-        <ProfileDescription>
-          <ProfileName>{username}</ProfileName>
+        <S.ProfileDescription>
+          <S.ProfileName>{username}</S.ProfileName>
           <p>@{tag}</p>
           <p>{location}</p>
-        </ProfileDescription>
+        </S.ProfileDescription>
 
-        <ProfileStats>
+        <S.ProfileStats>
           {Object.entries(stats).map(stat => {
             const [name, value] = stat;
             return (
-              <ProfileStatsItem key={name}>
+              <S.ProfileStatsItem key={name}>
                 <span>{name}</span>
                 <span>{value}</span>
-              </ProfileStatsItem>
+              </S.ProfileStatsItem>
             );
           })}
-        </ProfileStats>
-      </ProfileCard>
+        </S.ProfileStats>
+      </S.ProfileCard>
     </Box>
   );
 };

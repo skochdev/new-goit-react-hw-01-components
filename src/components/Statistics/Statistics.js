@@ -1,9 +1,4 @@
-import {
-  StyledStatistics,
-  StyledTitle,
-  StyledList,
-  StyledListItem,
-} from './Statistics.styled';
+import * as S from './Statistics.styled';
 import PropTypes from 'prop-types';
 import { getRandomHexColor } from '../../functions/getRandomHexColor';
 import { Box } from '../Box';
@@ -11,21 +6,21 @@ import { Box } from '../Box';
 export const Statistics = ({ title = null, stats }) => {
   return (
     <>
-      <StyledStatistics>
-        {title && <StyledTitle>{title}</StyledTitle>}
-        <StyledList>
+      <S.Statistics>
+        {title && <S.Title>{title}</S.Title>}
+        <S.List>
           {stats.map(({ label, percentage, id }) => (
-            <StyledListItem key={id}>
+            <S.ListItem key={id}>
               <Box bg="white">
                 <Box as="span">{label}</Box>
                 <Box as="span" color={getRandomHexColor()}>
                   {percentage}%
                 </Box>
               </Box>
-            </StyledListItem>
+            </S.ListItem>
           ))}
-        </StyledList>
-      </StyledStatistics>
+        </S.List>
+      </S.Statistics>
     </>
   );
 };

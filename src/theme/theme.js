@@ -2,7 +2,7 @@ export const theme = Object.freeze({
   borders: [0, '2px solid', '4px solid', '8px solid'],
   radii: {
     none: '0',
-    normal: '0.4rem',
+    normal: '0.2rem',
     round: '50%',
   },
   colors: {
@@ -13,8 +13,10 @@ export const theme = Object.freeze({
     background: '#E7ECF2',
     primary: '#07c',
     secondary: '#05a',
-    accent: '#fda031',
-    muted: '#b2b2b2',
+    accent: '#ffb358',
+    muted: '#dcdcdc',
+    online: '#46e31d',
+    offline: '#bebebe',
   },
   fontSizes: {
     xs: '12px',
