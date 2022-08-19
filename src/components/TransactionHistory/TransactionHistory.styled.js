@@ -22,6 +22,7 @@ export const TableHead = styled.thead`
 
 export const TableBody = styled.tbody`
   display: block;
+
   tr {
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +33,6 @@ export const TableBody = styled.tbody`
 
     td {
       padding: ${p => p.theme.space[2]}px;
-
       width: 100%;
     }
   }

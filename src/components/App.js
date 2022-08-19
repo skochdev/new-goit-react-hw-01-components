@@ -8,8 +8,6 @@ import friends from 'friends';
 import transactions from 'transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
-console.log(transactions);
-
 function App() {
   return (
     <Box as="main" bg="white">
