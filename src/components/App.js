@@ -6,6 +6,7 @@ import statistics from 'statistics.json';
 import { FriendList } from './FriendList/FriendList';
 import friends from 'friends';
 import transactions from 'transactions.json';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 console.log(transactions);
 
@@ -41,6 +42,9 @@ function App() {
       </Box>
       <Box>
         <FriendList friends={friends}></FriendList>
+      </Box>
+      <Box>
+        <TransactionHistory transactions={transactions} />
       </Box>
     </Box>
   );

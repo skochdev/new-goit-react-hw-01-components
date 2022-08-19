@@ -1,6 +1,5 @@
 import * as S from './TransactionHistory.styled';
 import { Box } from '../Box';
-import { TableBody, TableHead } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ transactions }) => {
   return (

@@ -5,30 +5,39 @@ export const Table = styled.table`
 `;
 
 export const TableHead = styled.thead`
-  display: flex;
-  width: 100%;
-  background-color: ${p => p.theme.colors.background};
-  padding: ${p => p.theme.space[2]}px;
+  display: block;
 
   tr {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  th {
+    width: 100%;
+    color: ${p => p.theme.colors.white};
+    background-color: ${p => p.theme.colors.primary};
+    padding: ${p => p.theme.space[3]}px;
   }
 `;
 
 export const TableBody = styled.tbody`
+  display: block;
   tr {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     text-align: center;
-    column-gap: ${p => p.theme.space[2]}px;
+    gap: ${p => p.theme.space[1]}px;
+    background-color: ${p => p.theme.colors.muted};
 
     td {
       padding: ${p => p.theme.space[2]}px;
-      background-color: tomato;
+
       width: 100%;
     }
+  }
+
+  tr:nth-child(odd) {
+    background-color: ${p => p.theme.colors.white};
   }
 `;
